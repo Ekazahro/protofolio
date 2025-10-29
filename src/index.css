@@ -1,0 +1,97 @@
+/* CSS Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Color Palette - Dark NFT/Crypto Theme */
+  --primary-purple: #8B5CF6;
+  --secondary-purple: #A855F7;
+  --accent-purple: #C084FC;
+  --neon-purple: #D946EF;
+  --dark-bg: #0F0F23;
+  --dark-card: #1A1B3A;
+  --darker-purple: #4C1D95;
+  --glass-dark: rgba(26, 27, 58, 0.8);
+  --glass-border: rgba(139, 92, 246, 0.3);
+  --text-primary: #FFFFFF;
+  --text-secondary: #E5E7EB;
+  --text-muted: #9CA3AF;
+  --text-accent: #8B5CF6;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #0F0F23 0%, #1A1B3A 50%, #2D1B69 100%);
+  --gradient-secondary: linear-gradient(135deg, #8B5CF6 0%, #A855F7 100%);
+  --gradient-accent: linear-gradient(135deg, #C084FC 0%, #D946EF 100%);
+  --gradient-card: linear-gradient(135deg, rgba(26, 27, 58, 0.9) 0%, rgba(76, 29, 149, 0.2) 100%);
+  
+  /* Typography */
+  --font-primary: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+  
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --shadow-neon: 0 0 20px rgba(139, 92, 246, 0.4);
+  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  line-height: 1.6;
+  color: var(--text-primary);
+  background: var(--gradient-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gradient-secondary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-blue);
+}
+
+/* Selection Styling */
+::selection {
+  background: var(--accent-cyan);
+  color: var(--deep-blue);
+}
+
+/* Focus Styles */
+*:focus {
+  outline: 2px solid var(--accent-cyan);
+  outline-offset: 2px;
+}
